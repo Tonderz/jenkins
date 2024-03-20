@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Example') {
             steps {
-                sh 'uname'
+                sh 'ls'
             }
         }
     }
