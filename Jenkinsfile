@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Example') {
             steps {
-                sh 'ls'
+                sh 'touch file.txt'
             }
         }
     }
