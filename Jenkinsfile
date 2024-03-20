@@ -1,9 +1,12 @@
 pipeline {
-    agent { docker { image 'node:20.11.1-alpine3.19' } }
+    agent any
+    options {
+        timeout(time:1, unit: 'SECONDS')
+}
     stages {
-        stage('build') {
+        stage('Example') {
             steps {
-                sh 'node --version'
+                echo $(uname -a)
             }
         }
     }
