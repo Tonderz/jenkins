@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Example') {
             steps {
-                echo $(uname -a)
+                echo This is awesome
             }
         }
     }
